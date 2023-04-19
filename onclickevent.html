@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="showmsg()">Click</button>
+   <button onclick="showmsg2()">Click2</button>
+   <p id = "message">Hello</p>
+   <script>
+    function showmsg()
+    {
+        alert("you clicked the button");
+    }
+
+    function showmsg2()
+    {
+        // alert("you clicked the button 2");
+        var text = document.querySelector("#message");
+        text.innerHTML = "hello from button 2";
+    }
+   </script>
+    <!-- <button onclick = "alart('clicked the button')">Click Me</button> -->
+</body>
+</html>
